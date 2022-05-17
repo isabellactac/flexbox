@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    margin: 5px 0;
+}
+/* celular grande, tablet ou maior*/
+@media (min-width: 460px){ /* nesta largura mímina, ele aplica as condições*/
+    div{
+        background-color: blue;
+        width: 80%;
+    }
+}
+/* tablet grande ou pc */
+@media(min-width: 768px){
+    div{
+        background-color: green;
+        width: 50%;
+        height: 400;
+    }
+}
+/* pc ou maior */
+@media (min-width: 1280px){
+    div{
+        background-color: black;
+        width: 20%;
+    }
+}
