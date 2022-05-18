@@ -46,6 +46,11 @@ main{
     /* flex-direction: column; - inverte o justify-content(vertical) e o align-items(horizontal)*/
     /* flex-direction: row-reverse; */
     /* flex-direction: column-reverse; */
+
+    /* se permite quebra de linha ou não */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; - quebra pra cima */
 }
 
 div{
@@ -55,13 +60,18 @@ div{
     margin: 5px;
     /* display: inline; um ao lado do outro*/
     /* display: block; */
+    order: 0; /* prioridade padrão */
 }
 
 .azul{
     background-color: blue;
-    height: 500px;
+    order: 2;
+    flex-grow: 0.5;
 }
 
 .amarelo{
     background-color: yellow;
+    order: 1; /* nível de prioridade na ordenação */
+    flex-grow: 0.5; /* preenche espaço vazio, sendo o 1 100% */
+    align-self: flex-end; /* alinha apenas esta classe de div */
 }
