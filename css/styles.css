@@ -4,31 +4,64 @@
     box-sizing: border-box;
 }
 
+main{
+    height: 100vh;
+    display: flex;
+    /* alinha verticalmente ao centro */
+    /* align-items: center; */
+
+    /* alinha verticalmente ao topo */
+    /* align-items: flex-start; */
+
+    /* alinha verticalmente ao rodapé */
+    /* align-items: flex-end; */
+
+    /* alinha verticalmente à base da linha */
+    /* align-items: baseline; */
+
+    /* estica os itens para preencher o container*/
+    /* align-items: stretch; */
+
+    /* alinha horizontalmente ao centro*/
+    /* justify-content: center; */
+
+    /* usar sempre flex start e nem sempre só start pq n funciona em todos navegadores */
+    /* início esquerda */
+    /* justify-content: flex-start; */
+
+    /* início direita*/
+    /* justify-content: flex-end; */
+
+    /* distribui horizontalmente espaços*/
+    /* justify-content: space-between; */
+
+    /* distribui espaços ao redor */
+    /* justify-content: space-around; */
+
+    /* distribui espaços ao redor de forma igual */
+    /* justify-content: space-evenly; */
+
+    /* consigo inverter as coisas */
+    /* flex-direction: row; */
+    /* flex-direction: column; - inverte o justify-content(vertical) e o align-items(horizontal)*/
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+}
+
 div{
-    width: 100%;
+    width: 100px;
     height: 100px;
     background-color: red;
-    margin: 5px 0;
+    margin: 5px;
+    /* display: inline; um ao lado do outro*/
+    /* display: block; */
 }
-/* celular grande, tablet ou maior*/
-@media (min-width: 460px){ /* nesta largura mímina, ele aplica as condições*/
-    div{
-        background-color: blue;
-        width: 80%;
-    }
+
+.azul{
+    background-color: blue;
+    height: 500px;
 }
-/* tablet grande ou pc */
-@media(min-width: 768px){
-    div{
-        background-color: green;
-        width: 50%;
-        height: 400;
-    }
-}
-/* pc ou maior */
-@media (min-width: 1280px){
-    div{
-        background-color: black;
-        width: 20%;
-    }
+
+.amarelo{
+    background-color: yellow;
 }
